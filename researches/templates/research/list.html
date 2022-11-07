@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>list</title>
+</head>
+<body>
+    <h1>research topics</h1>
+   <table>
+    <th>id</th>
+    <th>title</th>
+   
+{% for x in my_researches%}
+ <tr>
+     <td>{{ x.id }}</td>
+   <td>{{ x.title }}</td>
+</tr>
+ 
+ {% endfor%}
+
+ <a href=" url 'x.title"></a>
+
+   </table>
+
+</body>
+</html>
