@@ -12,13 +12,13 @@
    
 {% for x in my_researches%}
  <tr>
-     <td>{{ x.id }}</td>
+<td>{{ x.id }}</td>
    <td>{{ x.title }}</td>
+
+   <td> <a href="{% url 'detail' x.id %}" ><button>click</button></a></td>
 </tr>
  
  {% endfor%}
-
- <a href=" url 'x.title"></a>
 
    </table>
 

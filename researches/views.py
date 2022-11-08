@@ -15,7 +15,7 @@ def list(request):
 def detail(request,id):
     selected_research=Research.objects.get(id=id)
     content = {
-         'research': selected_research
+         'selected_research': selected_research
     }
     return render(request, 'research/detail.html',content)
 
