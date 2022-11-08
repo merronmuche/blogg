@@ -17,7 +17,7 @@ def detail(request,id):
     content = {
          'selected_research': selected_research
     }
-    return render(request, 'research/detail.html',content)
+    return render(request = request, template_name= 'research/detail.html',context = content)
 
 def add(request):
 
