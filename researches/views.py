@@ -12,8 +12,12 @@ def list(request):
     }
     return render(request,'research/list.html',content)
 
-def detail(request):
-    
+def detail(request,id):
+    selected_research=Research.objects.get(id=id)
+    content = {
+         'research': selected_research
+    }
+    return render(request, 'research/detail.html',content)
 
 def add(request):
 
