@@ -31,7 +31,7 @@ def add(request):
 
     else:
 
-        form = ResearchForm(request.POST)
+        form = ResearchForm(request.POST, request.FILES)
 
         if form.is_valid():
             Research = form.save()
