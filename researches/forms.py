@@ -7,5 +7,5 @@ from researches.models import Research
 class ResearchForm(forms.ModelForm):
     class Meta:
         model = Research
-        fields=['title','content']
+        fields=['title','content','image']
 

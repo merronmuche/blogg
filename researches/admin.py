@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from researches.models import Research
+
+class ResearchAdmin(admin.ModelAdmin):
+
+    list_display = ['title', 'image']
+admin.site.register(Research,ResearchAdmin)
