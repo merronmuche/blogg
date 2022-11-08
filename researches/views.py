@@ -30,7 +30,6 @@ def add(request):
         return render(request,'research/create.html', context)
 
     else:
-
         form = ResearchForm(request.POST, request.FILES)
 
         if form.is_valid():
