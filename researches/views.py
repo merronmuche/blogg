@@ -33,6 +33,6 @@ def add(request):
         form = ResearchForm(request.POST, request.FILES)
 
         if form.is_valid():
-            Research = form.save()
+            research = form.save()
             return redirect(reverse('list'))
 

@@ -6,11 +6,12 @@
 <head>
     
     <title>Detail</title>
+    <link rel="stylesheet" href="{% static 'styles/detail.css' %}">
 </head>
 <body>
     <a href="{% url 'list'%}"><button>articles</button></a>
-    <h2>{{selected_research.title}}</h2>
-    <img src="{{selected_research.image.url}}" alt="image">
+    <h2 class="center">{{selected_research.title}}</h2>
+    <img class="center" height="400" width="400" src="{{selected_research.image.url}}" alt="image">
     <p>{{selected_research.content}}</p>    
 </body>
 </html>

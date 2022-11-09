@@ -1,0 +1,15 @@
+
+
+p{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: x-large;
+    line-height: 30pt;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
