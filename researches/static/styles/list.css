@@ -34,8 +34,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   line-height: 1.42em;
-  color:#A7A1AE;
-  background-color:#1F2739;
+  color:#151218;
+  background-color:#e1e8eb;
 }
 
 h1 {
@@ -48,7 +48,8 @@ h1 {
 
 h2 {
   font-size:1em; 
-  font-weight: 300;
+  font-weight: 900;
+  font-size: xx-large;
   text-align: center;
   display: block;
   line-height:1em;
