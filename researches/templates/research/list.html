@@ -1,12 +1,16 @@
+
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     
     <title>list</title>
+    <link rel="stylesheet" href="{% static 'styles/detail.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/list.css' %}">
 </head>
 <body>
-    <h1>research topics</h1>
-   <table>
+    <h1 class="center">research topics</h1>
+   <table class="table">
     <th>id</th>
     <th>title</th>
    
@@ -15,13 +19,13 @@
 <td>{{ x.id }}</td>
    <td>{{ x.title }}</td>
 
-   <td> <a href="{% url 'detail' x.id %}" ><button>Detail</button></a></td>
+   <td> <a href="{% url 'detail' x.id %}" ><button class="button-45" role="button">Detail</button></a></td>
 </tr>
  
  {% endfor%}
 
    </table>
 
-   <a href="{% url 'create' %}"><button>Add</button></a>
+   <a href="{% url 'create' %}"><button class="button-45" role="button">Add</button></a>
 </body>
 </html>

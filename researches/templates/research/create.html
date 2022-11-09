@@ -1,20 +1,24 @@
 
+{% load static %}
+{% load crispy_forms_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
     <title>create</title>
+    <link rel="stylesheet" href="{% static 'styles/list.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/create.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/detail.css' %}">
 </head>
 <body>
+   <a href="{%url 'list' %}"><button class="button-45" role="button">cancel</button></a>
     <h1>Create your Post here!</h1>
 
    <form action="" method='post' enctype="multipart/form-data">
-    
         {% csrf_token %}
-        {{ form.as_ul }}
-        <input type="submit" value="Submit">
+        {{ form|crispy }}
+        <input class="button-45" role="button" type="submit" value="Submit">
         </form>
-   <p><a href="{%url 'list' %}"><button>cancel</button></a></p> 
         
 </body>
 </html>
