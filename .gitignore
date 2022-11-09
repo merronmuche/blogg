@@ -1,5 +1,5 @@
 # Django #
-
+media/
 note.py
 *.log
 *.pot
