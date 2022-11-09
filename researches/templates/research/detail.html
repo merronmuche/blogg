@@ -12,6 +12,9 @@
 <body>
     <a href="{% url 'list'%}"><button class="button-45" role="button">articles</button></a>
     <h2 class="center">{{selected_research.title}}</h2>
+    <i class="center">By {{selected_research.author.firstname}} {{selected_research.author.lastname}} </i>
+    <i class="center">Email: {{selected_research.author.email}}</i>
+    <br>
     <img class="center" height="400" width="400" src="{{selected_research.image.url}}" alt="image">
     <p>{{selected_research.content}}</p>    
 </body>
